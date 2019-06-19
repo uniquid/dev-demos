@@ -1,0 +1,22 @@
+{
+  "name": "dev-demos",
+  "version": "1.0.0",
+  "description": "UniquID demos for phisycal devices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uniquid/dev-demos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uniquid/dev-demos/issues"
+  },
+  "homepage": "https://github.com/uniquid/dev-demos#readme",
+  "devDependencies": {
+    "@uniquid/uidcore": "git+https://github.com/uniquid/uidcore-js.git#v1.0.0"
+  }
+}
