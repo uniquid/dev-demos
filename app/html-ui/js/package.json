@@ -1,0 +1,17 @@
+{
+  "name": "uniquid-dev-demo-html-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/bootstrap": "^4.2.0",
+    "@types/jquery": "^3.3.29",
+    "@types/socket.io": "^2.1.2"
+  }
+}
