@@ -1,0 +1,11 @@
+# C/C++/Linux
+**/*.so
+**/*.o
+**/*.d
+
+# Python
+**/*.pyc
+**/__pycache__
+
+# vscode
+.vscode

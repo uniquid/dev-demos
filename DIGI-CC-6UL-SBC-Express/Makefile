@@ -80,7 +80,7 @@ IOT_SRC_FILES += $(shell find $(IOT_CLIENT_DIR)/external_libs/jsmn -name '*.c')
 IOT_SRC_FILES += $(shell find $(PLATFORM_DIR)/ -name '*.c')
 IOT_SRC_FILES += $(shell find $(PLATFORM_COMMON_DIR)/ -name '*.c')
 
-INCLUDE_ALL_DIRS += $(IOT_INCLUDE_DIRS) $(TLS_INCLUDE_DIR) -I ./ -I uidagent-c 
+INCLUDE_ALL_DIRS += $(IOT_INCLUDE_DIRS) $(TLS_INCLUDE_DIR) -I ./ -I uidagent-c
 
 # Logging level control
 LOG_FLAGS += -DENABLE_IOT_DEBUG
@@ -137,10 +137,11 @@ clean_repo:
 	rm -rf aws-iot-device-sdk-embedded-C
 	rm -rf mbedtls
 
-UIDCORE_C_BRANCH = v2.0.0
+UIDCORE_C_BRANCH = v2.1.0
+
 .PHONY: clone_repo
 clone_repo:
 	git clone --recurse-submodules https://github.com/uniquid/uidcore-c.git -b $(UIDCORE_C_BRANCH)
 	git clone https://github.com/aws/aws-iot-device-sdk-embedded-C.git -b v3.0.1
 	git -C aws-iot-device-sdk-embedded-C/ apply ../uidagent-c/IoT-sdk.patch
-	git clone https://github.com/ARMmbed/mbedtls.git -b mbedtls-2.16.0
+	git clone https://github.com/ARMmbed/mbedtls.git -b mbedtls-2.16.1
